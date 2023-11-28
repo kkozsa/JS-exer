@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <script type="text/javascript">
+
+            var startProgram = function ()
+            {
+                var sum = 0.0;
+                var gradeInput;
+                var grade;
+
+                // Initialize counter
+                var counter = 0;
+
+                // Read grades from input
+                gradeInput = window.prompt("Enter integer grade, -1 to quit:", "0");
+
+                // Convert grade input to float
+                grade = parseFloat(gradeInput);
+
+                // Read grades from input and sum grades
+                while (grade!=-1)
+                {
+                    // Add grade to sum
+                    sum = sum + grade;
+
+                    // Increment counter
+                    counter ++;
+
+                    // Read grade from input
+                    gradeInput = window.prompt("Enter integer grade, -1 to quit:", "0");
+
+                    // Convert grade input to float
+                    grade = parseFloat(gradeInput);
+                }
+                if (counter!=0)
+                {
+                    // Calculate average grade
+                    var averageGrade = sum/counter;
+
+                    // Show output
+                    document.getElementById("paragraph1").innerHTML = "Student average grade: " + averageGrade;
+                }
+                else
+                {
+                    // Show output
+                    document.getElementById("paragraph1").innerHTML = "No grades were entered."
+                }
+            }
+
+        </script>
+
+    </head>
+
+    <body onLoad ="startProgram();">
+        Java script tutorial <br>
+        <p id="paragraph1">
+            This content will be replaced by javascript content.
+        </p>
+
+    </body>
+
+</html>

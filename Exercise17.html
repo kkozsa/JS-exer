@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <script type="text/javascript">
+            var startProgram = function()
+            {
+
+            var htmlOutput = "";
+            var c = 5;
+
+            // Post incrementing c
+            htmlOutput += "Post incrementing<br><br>";
+            htmlOutput += "Starting c value:" + c + "<br><br>";
+            htmlOutput += "c++ value:" + (c++) + "<br><br>";
+            htmlOutput += "c value after post incrementing:" + c + "<br><br>";
+            htmlOutput += "-----------------------<br><br>";
+
+            // Pre incrementing c
+            htmlOutput += "Pre incrementing<br><br>";
+            htmlOutput += "Starting c value:" + c + "<br><br>";
+            htmlOutput += "++c value:" + (++c) + "<br><br>";
+            htmlOutput += "c value after pre incrementing:" + c + "<br><br>";
+            
+            // Show output
+            document.getElementById("paragraph1").innerHTML = htmlOutput;
+            
+            }
+
+        </script>
+
+    </head>
+
+    <body onLoad ="startProgram();">
+        Java script tutorial <br>
+        <p id="paragraph1">
+            This content will be replaced by javascript content.
+        </p>
+
+    </body>
+
+</html>
