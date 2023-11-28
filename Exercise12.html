@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <script type="text/javascript">
+
+            var startProgram = function()
+            {
+                var sum = 0.0;
+                var gradeInput;
+                var grade;
+
+                // Read grades from input and sum grades
+                for (var i=1; i<=3; i++)
+                {
+                    // Read grade from input
+                    gradeInput = window.prompt("Enter student grade");
+
+                    // Convert grade input to float:
+                    grade = parseFloat(gradeInput);
+
+                    // Add grade to sum
+                    sum = sum + grade;
+                }
+                // Calculate average grade
+                var averageGrade = sum/3;
+
+                // Show output
+                document.getElementById("paragraph1").innerHTML = "Student average grade: "+averageGrade;
+            }
+
+        </script>
+
+    </head>
+    
+    <body onload="startProgram();">
+        Java script tutorial<br>
+        <p id="paragraph1">
+            This content will be replaced by javascript content.
+        </p>
+    </body>
+
+</html>

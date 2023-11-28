@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <script type="text/javascript">
+
+            var startProgram = function()
+            {
+
+                // Numbers read from input as strings
+                var gradeInput = window.prompt("Enter student grade");
+
+                // Numbers used to convert strings input to float
+                var grade = parseFloat(gradeInput);
+
+                // Make decision
+                if ((grade>89.5) && (grade<=100.0))
+                {
+                    document.getElementById("paragraph1").innerHTML="Student grade: A";
+                }
+                else if ((grade>86.5) && (grade<=89.5))
+                {
+                    document.getElementById("paragraph1").innerHTML="Student grade: A-";
+                }
+                else if ((grade>83.5) && (grade<=86.5))
+                {
+                    document.getElementById("paragraph1").innerHTML="Student grade: B+";
+                }
+                else if ((grade>79.5) && (grade<=83.5))
+                {
+                    document.getElementById("paragraph1").innerHTML="Student grade: B";
+                }
+                else if ((grade>76.5) && (grade<=79.5))
+                {
+                    document.getElementById("paragraph1").innerHTML="Student grade: B-";
+                }
+                else if ((grade>73.5) && (grade<=76.5))
+                {
+                    document.getElementById("paragraph1").innerHTML="Student grade: C+";
+                }
+                else if ((grade>69.5) && (grade<=73.5))
+                {
+                    document.getElementById("paragraph1").innerHTML="Student grade: C";
+                }
+                else if ((grade>66.5) && (grade<=69.5))
+                {
+                    document.getElementById("paragraph1").innerHTML="Student grade: C-";
+                }
+                else if ((grade>63.5) && (grade<=66.5))
+                {
+                    document.getElementById("paragraph1").innerHTML="Student grade: D+";
+                }
+                else if ((grade>=60.0) && (grade<=63.5))
+                {
+                    document.getElementById("paragraph1").innerHTML="Student grade: D";
+                }
+                else
+                {
+                    document.getElementById("paragraph1").innerHTML="Student failed.";
+                }
+
+            }
+
+        </script>
+
+    </head>
+
+    <body onload="startProgram();">
+        Java script tutorial<br>
+        <p id="paragraph1">
+            This content will be replaced by javascript content.
+        </p>
+    </body>
+
+</html>

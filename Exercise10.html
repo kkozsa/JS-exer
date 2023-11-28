@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <script type="text/javascript">
+
+            var startProgram = function()
+            {
+                // Numbers read from input as strings
+                var dayNumberInput = window.prompt("Enter day number:");
+
+                // Numbers used to convert string input to float
+                var dayNumber = parseInt(dayNumberInput);
+
+                var day;
+
+                // Make a decision
+                switch (dayNumber)
+                {
+                    case 1:
+                        {
+                            day = "Sunday";
+                            break;
+                        }
+                    case 2:
+                        {
+                            day = "Monday";
+                            break;
+                        }
+                    case 3:
+                        {
+                            day = "Tuesday";
+                            break;
+                        }
+                    case 4:
+                        {
+                            day = "Wednesday";
+                            break;
+                        }
+                    case 5:
+                        {
+                            day = "Thursday";
+                            break;
+                        }
+                    case 6:
+                        {
+                            day = "Friday";
+                            break;
+                        }
+                    case 7:
+                        {
+                            day = "Saturday";
+                            break;
+                        }
+                    default:
+                        {
+                            day = "Sunday";
+                            break;  
+                        }
+                    
+                }
+                document.getElementById("paragraph1").innerHTML="Day is: " + day;
+            }
+
+
+        </script>
+
+    </head>
+
+    <body onload="startProgram();">
+        Java script tutorial<br>
+        <p id="paragraph1">
+            This content will be replaced by javascript content.
+        </p>
+    </body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <script type="text/javascript">
+
+            var startProgram = function()
+            {
+                var htmlOutput = "";
+
+                // Initialize counter
+                var counter = 1;
+
+                // Counting numbers from 1 to 10
+                while (counter<=10)
+                {
+                    // Add a new line for html output with value of counter i
+                    htmlOutput = htmlOutput + "counter" + counter + "<br>";
+
+                    // Increment counter
+                    counter++;
+                }
+
+                // Show output
+                document.getElementById("paragraph1").innerHTML = htmlOutput;
+            }
+
+        </script>
+
+    </head>
+
+    <body onLoad ="startProgram();">
+        Java script tutorial <br>
+        <p id="paragraph1">
+            This content will be replaced by javascript content.
+        </p>
+
+    </body>
+
+</html>

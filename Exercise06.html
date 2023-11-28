@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>Reading string input and conversion to float</h2>
+
+<p id="demo"></p>
+
+<script>
+
+// Number read from input as strings
+
+var firstNumberInput;
+var secondNumberInput;
+
+// Numbers used to convert strings input to float;
+var number1;
+var number2;
+// Variable used for sum
+var sum;
+
+// Reading input numbers as strings
+firstNumberInput = window.prompt("Enter first float");
+secondNumberInput = window.prompt("Enter second float");
+
+// Convert input strings to integers
+number1 = parseFloat(firstNumberInput);
+number2 = parseFloat(secondNumberInput);
+
+// Make sum
+
+sum = number1 + number2;
+
+// Show output
+document.getElementById("demo").innerHTML="sum=" + sum;
+
+</script>
+
+</body>
+
+</html>

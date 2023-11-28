@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<p id="demo"></p>    
+
+<script>
+
+var firstNumberInput;
+var secondNumberInput;
+
+// Numbers used to convert strings input to integers
+
+var number1;
+var number2;
+
+// Variable used for sum
+var sum;
+
+// Reading input numbers as strings
+firstNumberInput = window.prompt("Enter first integer");
+secondNumberInput = window.prompt("Enter second integer");
+
+// Convert input string to integers
+number1 = parseInt(firstNumberInput);
+number2 = parseInt(secondNumberInput);
+
+// Make the sum
+sum = number1 + number2;
+
+// Show output
+document.getElementById("demo").innerHTML="Answer=" + sum;
+
+
+
+</script>
+
+</body>
+
+</html>
